@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAE9FF782A812A50006DA7B9 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9FF772A812A50006DA7B9 /* GridView.swift */; };
 		FAF695312A80CF4400016D48 /* NamemoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695302A80CF4400016D48 /* NamemoryApp.swift */; };
 		FAF695332A80CF4400016D48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695322A80CF4400016D48 /* ContentView.swift */; };
 		FAF695352A80CF4500016D48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF695342A80CF4500016D48 /* Assets.xcassets */; };
@@ -16,12 +17,12 @@
 		FAF6954B2A80CF6C00016D48 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695412A80CF6C00016D48 /* CameraPicker.swift */; };
 		FAF6954C2A80CF6C00016D48 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695422A80CF6C00016D48 /* People.swift */; };
 		FAF6954D2A80CF6C00016D48 /* AddPersonView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695432A80CF6C00016D48 /* AddPersonView-ViewModel.swift */; };
-		FAF6954E2A80CF6C00016D48 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695442A80CF6C00016D48 /* MainView.swift */; };
+		FAF6954E2A80CF6C00016D48 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695442A80CF6C00016D48 /* ListView.swift */; };
 		FAF6954F2A80CF6C00016D48 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695452A80CF6C00016D48 /* Location.swift */; };
-		FAF695512A80CF6C00016D48 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695472A80CF6C00016D48 /* LocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FAE9FF772A812A50006DA7B9 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		FAF6952D2A80CF4400016D48 /* Namemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF695302A80CF4400016D48 /* NamemoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamemoryApp.swift; sourceTree = "<group>"; };
 		FAF695322A80CF4400016D48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,9 +33,8 @@
 		FAF695412A80CF6C00016D48 /* CameraPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		FAF695422A80CF6C00016D48 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		FAF695432A80CF6C00016D48 /* AddPersonView-ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddPersonView-ViewModel.swift"; sourceTree = "<group>"; };
-		FAF695442A80CF6C00016D48 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FAF695442A80CF6C00016D48 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		FAF695452A80CF6C00016D48 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		FAF695472A80CF6C00016D48 /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +72,9 @@
 				FAF695402A80CF6C00016D48 /* AddPersonView.swift */,
 				FAF695412A80CF6C00016D48 /* CameraPicker.swift */,
 				FAF695322A80CF4400016D48 /* ContentView.swift */,
+				FAE9FF772A812A50006DA7B9 /* GridView.swift */,
+				FAF695442A80CF6C00016D48 /* ListView.swift */,
 				FAF695452A80CF6C00016D48 /* Location.swift */,
-				FAF695472A80CF6C00016D48 /* LocationView.swift */,
-				FAF695442A80CF6C00016D48 /* MainView.swift */,
 				FAF695422A80CF6C00016D48 /* People.swift */,
 				FAF6953E2A80CF6C00016D48 /* PersonView.swift */,
 				FAF695342A80CF4500016D48 /* Assets.xcassets */,
@@ -162,14 +162,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF695482A80CF6C00016D48 /* PersonView.swift in Sources */,
-				FAF695512A80CF6C00016D48 /* LocationView.swift in Sources */,
-				FAF6954E2A80CF6C00016D48 /* MainView.swift in Sources */,
+				FAF6954E2A80CF6C00016D48 /* ListView.swift in Sources */,
 				FAF6954F2A80CF6C00016D48 /* Location.swift in Sources */,
 				FAF695332A80CF4400016D48 /* ContentView.swift in Sources */,
 				FAF6954A2A80CF6C00016D48 /* AddPersonView.swift in Sources */,
 				FAF6954D2A80CF6C00016D48 /* AddPersonView-ViewModel.swift in Sources */,
 				FAF6954B2A80CF6C00016D48 /* CameraPicker.swift in Sources */,
 				FAF695312A80CF4400016D48 /* NamemoryApp.swift in Sources */,
+				FAE9FF782A812A50006DA7B9 /* GridView.swift in Sources */,
 				FAF6954C2A80CF6C00016D48 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
