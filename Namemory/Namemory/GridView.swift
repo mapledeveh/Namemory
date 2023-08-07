@@ -38,8 +38,8 @@ struct GridView: View {
                     }
                 }
             }
+            .padding([.top, .horizontal], 10)
         }
-        .padding()
     }
 }
 
