@@ -34,6 +34,7 @@ struct GridView: View {
                         .padding(10)
                         .background(.ultraThinMaterial)
                         .clipShape(RoundedRectangle(cornerRadius: 5))
+                        .shadow(radius: 2)
                     }
                 }
             }

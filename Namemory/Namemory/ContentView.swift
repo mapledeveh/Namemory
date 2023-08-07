@@ -28,16 +28,19 @@ struct ContentView: View {
                     if showingList {
                         HStack {
                             EditButton()
+                            
                             Button {
                                 showingList = false
                             } label: {
-                                Image(systemName: "square.grid.2x2")
+                                Image(systemName: "rectangle.grid.3x2")
                             }
+                            .accessibilityLabel("Show items in grid")
                         }
                     } else {
                         Button("Show List") {
                             showingList = true
                         }
+                        .accessibilityLabel("Show items in list")
                     }
                 }
                 
