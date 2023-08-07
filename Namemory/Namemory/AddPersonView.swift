@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PhotosUI
+import MapKit
 
 struct AddPersonView: View {
     @Environment(\.dismiss) var dismiss
@@ -14,32 +15,70 @@ struct AddPersonView: View {
     
     @ObservedObject var contactBook: ContactBook
     
+    @State private var menuDiaglog = false
+    @State private var showingPhotoPicker = false
+    @State private var showingCameraPicker = false
+    
     var body: some View {
         NavigationView {
-            VStack {
-                PhotosPicker(selection: $viewModel.photoItem, matching: .images) {
-                    ZStack {
-                        Rectangle()
-                            .fill(.secondary)
-                        
-                        Text("Select Photo")
+            ScrollView {
+                VStack {
+                    if let uiPhoto = viewModel.uiPhoto {
+                        Image(uiImage: uiPhoto)
+                            .resizable()
+                            .scaledToFill()
+                    } else {
+                        ZStack {
+                            Rectangle()
+                                .fill(.secondary)
+                            
+                            HStack {
+                                Image(systemName: "photo")
+                                Text("Select a photo")
+                            }
                             .foregroundColor(.white)
                             .font(.headline)
-                        
-                        if let uiImage = viewModel.uiPhoto {
-                            Image(uiImage: uiImage)
-                                .resizable()
-                                .scaledToFill()
                         }
                     }
                 }
-                .frame(width: 300, height: 400)
-                .clipped()
-                
-                Form {
-                    TextField("Name", text: $viewModel.name)
+                .confirmationDialog("", isPresented: $menuDiaglog) {
+                    Button {
+                        showingPhotoPicker = true
+                    } label: {
+                        HStack {
+                            Image(systemName: "photo")
+                            Text("Photo")
+                        }
+                    }
+                    
+                    Button {
+                        showingCameraPicker = true
+                    } label: {
+                        HStack {
+                            Image(systemName: "camera")
+                            Text("Camera")
+                        }
+                    }
+                } message: {
+                    Text("Choose an option")
                 }
-                .disabled(viewModel.uiPhoto == nil)
+                .sheet(isPresented: $showingCameraPicker) {
+                    CameraPicker(image: $viewModel.uiPhoto)
+                }
+                .frame(width: 225, height: 300)
+                .clipped()
+                .onTapGesture {
+                    menuDiaglog = true
+                    Task { @MainActor in
+                        viewModel.loadLocation()
+                    }
+                }
+                .photosPicker(isPresented: $showingPhotoPicker, selection: $viewModel.photoItem)
+                
+                TextField("Name", text: $viewModel.name)
+                    .textFieldStyle(.roundedBorder)
+                    .padding()
+                
             }
             .padding()
             .navigationTitle("Add Person")
@@ -58,7 +97,7 @@ struct AddPersonView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
                         if viewModel.name.trimmingCharacters(in: .whitespacesAndNewlines) != "" && viewModel.uiPhoto != nil {
-                            contactBook.people.append(Person(id: UUID(), name: viewModel.name, image: viewModel.uiPhoto!))
+                            contactBook.people.append(Person(id: UUID(), name: viewModel.name, image: viewModel.uiPhoto!, location: viewModel.wrappedLocation))
                             
                             dismiss()
                         } else {
@@ -68,10 +107,8 @@ struct AddPersonView: View {
                     .disabled(viewModel.name.isEmpty || viewModel.uiPhoto == nil)
                 }
             }
-            .onChange(of: viewModel.photoItem) { _ in
-                Task {
-                    await viewModel.loadImage()
-                }
+            .onAppear {
+                viewModel.locationFetcher.start()
             }
         }
     }

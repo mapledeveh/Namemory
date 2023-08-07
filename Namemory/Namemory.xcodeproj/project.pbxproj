@@ -7,34 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA20E9722A7B365A00DFF0E8 /* NamemoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20E9712A7B365A00DFF0E8 /* NamemoryApp.swift */; };
-		FA20E9742A7B365A00DFF0E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20E9732A7B365A00DFF0E8 /* ContentView.swift */; };
-		FA20E9762A7B365B00DFF0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA20E9752A7B365B00DFF0E8 /* Assets.xcassets */; };
-		FA20E9792A7B365B00DFF0E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA20E9782A7B365B00DFF0E8 /* Preview Assets.xcassets */; };
-		FA20E9802A7B659000DFF0E8 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20E97F2A7B659000DFF0E8 /* PhotoPickerView.swift */; };
-		FA20E9822A7B6BED00DFF0E8 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20E9812A7B6BED00DFF0E8 /* AddPersonView.swift */; };
-		FA20E9842A7B6C1800DFF0E8 /* AddPersonView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20E9832A7B6C1800DFF0E8 /* AddPersonView-ViewModel.swift */; };
-		FA20E9862A7B7CCC00DFF0E8 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20E9852A7B7CCC00DFF0E8 /* People.swift */; };
-		FA20E9882A7F76C400DFF0E8 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20E9872A7F76C400DFF0E8 /* PersonView.swift */; };
-		FA2A2B882A8047FB0076E239 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A2B872A8047FB0076E239 /* Location.swift */; };
+		FAF695312A80CF4400016D48 /* NamemoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695302A80CF4400016D48 /* NamemoryApp.swift */; };
+		FAF695332A80CF4400016D48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695322A80CF4400016D48 /* ContentView.swift */; };
+		FAF695352A80CF4500016D48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF695342A80CF4500016D48 /* Assets.xcassets */; };
+		FAF695382A80CF4500016D48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF695372A80CF4500016D48 /* Preview Assets.xcassets */; };
+		FAF695482A80CF6C00016D48 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6953E2A80CF6C00016D48 /* PersonView.swift */; };
+		FAF6954A2A80CF6C00016D48 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695402A80CF6C00016D48 /* AddPersonView.swift */; };
+		FAF6954B2A80CF6C00016D48 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695412A80CF6C00016D48 /* CameraPicker.swift */; };
+		FAF6954C2A80CF6C00016D48 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695422A80CF6C00016D48 /* People.swift */; };
+		FAF6954D2A80CF6C00016D48 /* AddPersonView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695432A80CF6C00016D48 /* AddPersonView-ViewModel.swift */; };
+		FAF6954E2A80CF6C00016D48 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695442A80CF6C00016D48 /* MainView.swift */; };
+		FAF6954F2A80CF6C00016D48 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695452A80CF6C00016D48 /* Location.swift */; };
+		FAF695512A80CF6C00016D48 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF695472A80CF6C00016D48 /* LocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA20E96E2A7B365A00DFF0E8 /* Namemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA20E9712A7B365A00DFF0E8 /* NamemoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamemoryApp.swift; sourceTree = "<group>"; };
-		FA20E9732A7B365A00DFF0E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FA20E9752A7B365B00DFF0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA20E9782A7B365B00DFF0E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FA20E97F2A7B659000DFF0E8 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
-		FA20E9812A7B6BED00DFF0E8 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
-		FA20E9832A7B6C1800DFF0E8 /* AddPersonView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddPersonView-ViewModel.swift"; sourceTree = "<group>"; };
-		FA20E9852A7B7CCC00DFF0E8 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
-		FA20E9872A7F76C400DFF0E8 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
-		FA2A2B872A8047FB0076E239 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FAF6952D2A80CF4400016D48 /* Namemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF695302A80CF4400016D48 /* NamemoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamemoryApp.swift; sourceTree = "<group>"; };
+		FAF695322A80CF4400016D48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAF695342A80CF4500016D48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAF695372A80CF4500016D48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAF6953E2A80CF6C00016D48 /* PersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		FAF695402A80CF6C00016D48 /* AddPersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
+		FAF695412A80CF6C00016D48 /* CameraPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		FAF695422A80CF6C00016D48 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		FAF695432A80CF6C00016D48 /* AddPersonView-ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddPersonView-ViewModel.swift"; sourceTree = "<group>"; };
+		FAF695442A80CF6C00016D48 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FAF695452A80CF6C00016D48 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FAF695472A80CF6C00016D48 /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA20E96B2A7B365A00DFF0E8 /* Frameworks */ = {
+		FAF6952A2A80CF4400016D48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,43 +48,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA20E9652A7B365A00DFF0E8 = {
+		FAF695242A80CF4400016D48 = {
 			isa = PBXGroup;
 			children = (
-				FA20E9702A7B365A00DFF0E8 /* Namemory */,
-				FA20E96F2A7B365A00DFF0E8 /* Products */,
+				FAF6952F2A80CF4400016D48 /* Namemory */,
+				FAF6952E2A80CF4400016D48 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FA20E96F2A7B365A00DFF0E8 /* Products */ = {
+		FAF6952E2A80CF4400016D48 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA20E96E2A7B365A00DFF0E8 /* Namemory.app */,
+				FAF6952D2A80CF4400016D48 /* Namemory.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA20E9702A7B365A00DFF0E8 /* Namemory */ = {
+		FAF6952F2A80CF4400016D48 /* Namemory */ = {
 			isa = PBXGroup;
 			children = (
-				FA20E9712A7B365A00DFF0E8 /* NamemoryApp.swift */,
-				FA20E9732A7B365A00DFF0E8 /* ContentView.swift */,
-				FA20E97F2A7B659000DFF0E8 /* PhotoPickerView.swift */,
-				FA20E9812A7B6BED00DFF0E8 /* AddPersonView.swift */,
-				FA20E9832A7B6C1800DFF0E8 /* AddPersonView-ViewModel.swift */,
-				FA20E9872A7F76C400DFF0E8 /* PersonView.swift */,
-				FA2A2B872A8047FB0076E239 /* Location.swift */,
-				FA20E9852A7B7CCC00DFF0E8 /* People.swift */,
-				FA20E9752A7B365B00DFF0E8 /* Assets.xcassets */,
-				FA20E9772A7B365B00DFF0E8 /* Preview Content */,
+				FAF695302A80CF4400016D48 /* NamemoryApp.swift */,
+				FAF695432A80CF6C00016D48 /* AddPersonView-ViewModel.swift */,
+				FAF695402A80CF6C00016D48 /* AddPersonView.swift */,
+				FAF695412A80CF6C00016D48 /* CameraPicker.swift */,
+				FAF695322A80CF4400016D48 /* ContentView.swift */,
+				FAF695452A80CF6C00016D48 /* Location.swift */,
+				FAF695472A80CF6C00016D48 /* LocationView.swift */,
+				FAF695442A80CF6C00016D48 /* MainView.swift */,
+				FAF695422A80CF6C00016D48 /* People.swift */,
+				FAF6953E2A80CF6C00016D48 /* PersonView.swift */,
+				FAF695342A80CF4500016D48 /* Assets.xcassets */,
+				FAF695362A80CF4500016D48 /* Preview Content */,
 			);
 			path = Namemory;
 			sourceTree = "<group>";
 		};
-		FA20E9772A7B365B00DFF0E8 /* Preview Content */ = {
+		FAF695362A80CF4500016D48 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FA20E9782A7B365B00DFF0E8 /* Preview Assets.xcassets */,
+				FAF695372A80CF4500016D48 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -88,13 +94,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA20E96D2A7B365A00DFF0E8 /* Namemory */ = {
+		FAF6952C2A80CF4400016D48 /* Namemory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA20E97C2A7B365B00DFF0E8 /* Build configuration list for PBXNativeTarget "Namemory" */;
+			buildConfigurationList = FAF6953B2A80CF4500016D48 /* Build configuration list for PBXNativeTarget "Namemory" */;
 			buildPhases = (
-				FA20E96A2A7B365A00DFF0E8 /* Sources */,
-				FA20E96B2A7B365A00DFF0E8 /* Frameworks */,
-				FA20E96C2A7B365A00DFF0E8 /* Resources */,
+				FAF695292A80CF4400016D48 /* Sources */,
+				FAF6952A2A80CF4400016D48 /* Frameworks */,
+				FAF6952B2A80CF4400016D48 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -102,25 +108,25 @@
 			);
 			name = Namemory;
 			productName = Namemory;
-			productReference = FA20E96E2A7B365A00DFF0E8 /* Namemory.app */;
+			productReference = FAF6952D2A80CF4400016D48 /* Namemory.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FA20E9662A7B365A00DFF0E8 /* Project object */ = {
+		FAF695252A80CF4400016D48 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					FA20E96D2A7B365A00DFF0E8 = {
+					FAF6952C2A80CF4400016D48 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = FA20E9692A7B365A00DFF0E8 /* Build configuration list for PBXProject "Namemory" */;
+			buildConfigurationList = FAF695282A80CF4400016D48 /* Build configuration list for PBXProject "Namemory" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,48 +134,50 @@
 				en,
 				Base,
 			);
-			mainGroup = FA20E9652A7B365A00DFF0E8;
-			productRefGroup = FA20E96F2A7B365A00DFF0E8 /* Products */;
+			mainGroup = FAF695242A80CF4400016D48;
+			productRefGroup = FAF6952E2A80CF4400016D48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA20E96D2A7B365A00DFF0E8 /* Namemory */,
+				FAF6952C2A80CF4400016D48 /* Namemory */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FA20E96C2A7B365A00DFF0E8 /* Resources */ = {
+		FAF6952B2A80CF4400016D48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA20E9792A7B365B00DFF0E8 /* Preview Assets.xcassets in Resources */,
-				FA20E9762A7B365B00DFF0E8 /* Assets.xcassets in Resources */,
+				FAF695382A80CF4500016D48 /* Preview Assets.xcassets in Resources */,
+				FAF695352A80CF4500016D48 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FA20E96A2A7B365A00DFF0E8 /* Sources */ = {
+		FAF695292A80CF4400016D48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA20E9742A7B365A00DFF0E8 /* ContentView.swift in Sources */,
-				FA20E9802A7B659000DFF0E8 /* PhotoPickerView.swift in Sources */,
-				FA2A2B882A8047FB0076E239 /* Location.swift in Sources */,
-				FA20E9722A7B365A00DFF0E8 /* NamemoryApp.swift in Sources */,
-				FA20E9822A7B6BED00DFF0E8 /* AddPersonView.swift in Sources */,
-				FA20E9862A7B7CCC00DFF0E8 /* People.swift in Sources */,
-				FA20E9842A7B6C1800DFF0E8 /* AddPersonView-ViewModel.swift in Sources */,
-				FA20E9882A7F76C400DFF0E8 /* PersonView.swift in Sources */,
+				FAF695482A80CF6C00016D48 /* PersonView.swift in Sources */,
+				FAF695512A80CF6C00016D48 /* LocationView.swift in Sources */,
+				FAF6954E2A80CF6C00016D48 /* MainView.swift in Sources */,
+				FAF6954F2A80CF6C00016D48 /* Location.swift in Sources */,
+				FAF695332A80CF4400016D48 /* ContentView.swift in Sources */,
+				FAF6954A2A80CF6C00016D48 /* AddPersonView.swift in Sources */,
+				FAF6954D2A80CF6C00016D48 /* AddPersonView-ViewModel.swift in Sources */,
+				FAF6954B2A80CF6C00016D48 /* CameraPicker.swift in Sources */,
+				FAF695312A80CF4400016D48 /* NamemoryApp.swift in Sources */,
+				FAF6954C2A80CF6C00016D48 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FA20E97A2A7B365B00DFF0E8 /* Debug */ = {
+		FAF695392A80CF4500016D48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,7 +237,7 @@
 			};
 			name = Debug;
 		};
-		FA20E97B2A7B365B00DFF0E8 /* Release */ = {
+		FAF6953A2A80CF4500016D48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,7 +291,7 @@
 			};
 			name = Release;
 		};
-		FA20E97D2A7B365B00DFF0E8 /* Debug */ = {
+		FAF6953C2A80CF4500016D48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -294,6 +302,7 @@
 				DEVELOPMENT_TEAM = Z448ANC7Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need permission to take a photo using camera.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to display photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -313,7 +322,7 @@
 			};
 			name = Debug;
 		};
-		FA20E97E2A7B365B00DFF0E8 /* Release */ = {
+		FAF6953D2A80CF4500016D48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -324,6 +333,7 @@
 				DEVELOPMENT_TEAM = Z448ANC7Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need permission to take a photo using camera.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to display photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -346,25 +356,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA20E9692A7B365A00DFF0E8 /* Build configuration list for PBXProject "Namemory" */ = {
+		FAF695282A80CF4400016D48 /* Build configuration list for PBXProject "Namemory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA20E97A2A7B365B00DFF0E8 /* Debug */,
-				FA20E97B2A7B365B00DFF0E8 /* Release */,
+				FAF695392A80CF4500016D48 /* Debug */,
+				FAF6953A2A80CF4500016D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA20E97C2A7B365B00DFF0E8 /* Build configuration list for PBXNativeTarget "Namemory" */ = {
+		FAF6953B2A80CF4500016D48 /* Build configuration list for PBXNativeTarget "Namemory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA20E97D2A7B365B00DFF0E8 /* Debug */,
-				FA20E97E2A7B365B00DFF0E8 /* Release */,
+				FAF6953C2A80CF4500016D48 /* Debug */,
+				FAF6953D2A80CF4500016D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FA20E9662A7B365A00DFF0E8 /* Project object */;
+	rootObject = FAF695252A80CF4400016D48 /* Project object */;
 }

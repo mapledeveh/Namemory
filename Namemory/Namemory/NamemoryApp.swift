@@ -2,7 +2,7 @@
 //  NamemoryApp.swift
 //  Namemory
 //
-//  Created by Alex Nguyen on 2023-08-02.
+//  Created by Alex Nguyen on 2023-08-07.
 //
 
 import SwiftUI
