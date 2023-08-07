@@ -55,6 +55,7 @@ struct AddPersonView: View {
                 }
                 .sheet(isPresented: $showingCameraPicker) {
                     CameraPicker(image: $viewModel.uiPhoto)
+                        .ignoresSafeArea()
                 }
                 .frame(width: 225, height: 300)
                 .clipped()
