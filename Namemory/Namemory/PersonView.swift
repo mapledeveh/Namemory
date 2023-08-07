@@ -24,12 +24,12 @@ struct PersonView: View {
             Map(coordinateRegion: $mapLocation, annotationItems: [person]) { person in
                 MapAnnotation(coordinate: person.location) {
                     VStack {
-                        Image(systemName: "person.fill")
-                            .font(.system(size: 32))
-                            .foregroundColor(.blue)
-                        
                         Text(person.name)
                             .font(.headline)
+                        
+                        Image(systemName: "mappin.and.ellipse")
+                            .font(.system(size: 32))
+                            .foregroundColor(.blue)
                     }
                 }
             }

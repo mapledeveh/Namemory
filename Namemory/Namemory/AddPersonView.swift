@@ -23,57 +23,42 @@ struct AddPersonView: View {
         NavigationView {
             ScrollView {
                 VStack {
-                    if let uiPhoto = viewModel.uiPhoto {
-                        Image(uiImage: uiPhoto)
-                            .resizable()
-                            .scaledToFill()
-                    } else {
-                        ZStack {
-                            Rectangle()
-                                .fill(.secondary)
-                            
-                            HStack {
-                                Image(systemName: "photo")
-                                Text("Select a photo")
+                    Menu {
+                        Button {
+                            showingPhotoPicker = true
+                        } label: {
+                            Label("Photo", systemImage: "photo")
+                        }
+                        
+                        Button {
+                            showingCameraPicker = true
+                        } label: {
+                            Label("Camera", systemImage: "camera.fill")
+                                .labelStyle(.titleAndIcon)
+                        }
+                    } label: {
+                        if let uiPhoto = viewModel.uiPhoto {
+                            Image(uiImage: uiPhoto)
+                                .resizable()
+                                .scaledToFill()
+                        } else {
+                            ZStack {
+                                Rectangle()
+                                    .fill(.secondary)
+                                
+                                Label("Select a Photo", systemImage: "photo")
+                                    .foregroundColor(.white)
+                                    .font(.headline)
                             }
-                            .foregroundColor(.white)
-                            .font(.headline)
                         }
                     }
-                }
-                .confirmationDialog("", isPresented: $menuDiaglog) {
-                    Button {
-                        showingPhotoPicker = true
-                    } label: {
-                        HStack {
-                            Image(systemName: "photo")
-                            Text("Photo")
-                        }
-                    }
-                    
-                    Button {
-                        showingCameraPicker = true
-                    } label: {
-                        HStack {
-                            Image(systemName: "camera")
-                            Text("Camera")
-                        }
-                    }
-                } message: {
-                    Text("Choose an option")
                 }
                 .sheet(isPresented: $showingCameraPicker) {
                     CameraPicker(image: $viewModel.uiPhoto)
                 }
                 .frame(width: 225, height: 300)
                 .clipped()
-                .onTapGesture {
-                    menuDiaglog = true
-                    Task { @MainActor in
-                        viewModel.loadLocation()
-                    }
-                }
-                .photosPicker(isPresented: $showingPhotoPicker, selection: $viewModel.photoItem)
+                .photosPicker(isPresented: $showingPhotoPicker, selection: $viewModel.photoItem, matching: .images)
                 
                 TextField("Name", text: $viewModel.name)
                     .textFieldStyle(.roundedBorder)
@@ -107,8 +92,17 @@ struct AddPersonView: View {
                     .disabled(viewModel.name.isEmpty || viewModel.uiPhoto == nil)
                 }
             }
+            .onChange(of: viewModel.photoItem) { _ in
+                Task { @MainActor in
+                    await viewModel.loadImage()
+                }
+            }
             .onAppear {
                 viewModel.locationFetcher.start()
+                
+                Task { @MainActor in
+                    viewModel.loadLocation()
+                }
             }
         }
     }

@@ -68,15 +68,15 @@
 			isa = PBXGroup;
 			children = (
 				FAF695302A80CF4400016D48 /* NamemoryApp.swift */,
-				FAF695432A80CF6C00016D48 /* AddPersonView-ViewModel.swift */,
-				FAF695402A80CF6C00016D48 /* AddPersonView.swift */,
-				FAF695412A80CF6C00016D48 /* CameraPicker.swift */,
 				FAF695322A80CF4400016D48 /* ContentView.swift */,
 				FAE9FF772A812A50006DA7B9 /* GridView.swift */,
 				FAF695442A80CF6C00016D48 /* ListView.swift */,
+				FAF6953E2A80CF6C00016D48 /* PersonView.swift */,
+				FAF695402A80CF6C00016D48 /* AddPersonView.swift */,
+				FAF695432A80CF6C00016D48 /* AddPersonView-ViewModel.swift */,
+				FAF695412A80CF6C00016D48 /* CameraPicker.swift */,
 				FAF695452A80CF6C00016D48 /* Location.swift */,
 				FAF695422A80CF6C00016D48 /* People.swift */,
-				FAF6953E2A80CF6C00016D48 /* PersonView.swift */,
 				FAF695342A80CF4500016D48 /* Assets.xcassets */,
 				FAF695362A80CF4500016D48 /* Preview Content */,
 			);
